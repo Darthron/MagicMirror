@@ -129,7 +129,7 @@ Module.register("alert",{
 			if (typeof payload.type === "undefined") { payload.type = "alert"; }
 			if (payload.type == "alert") {
 				this.show_alert(payload, sender);
-			} else if (payload.type = "notification") {
+			} else if (payload.type == "notification") {
 				this.show_notification(payload);
 			}
 		} else if (notification === "HIDE_ALERT") {
